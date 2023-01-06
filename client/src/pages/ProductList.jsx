@@ -30,7 +30,7 @@ const ProductList = () => {
     };
     setSelected(newSelectedProducts);
   }
-
+  //delete
   const [product, setProduct] = useState([])
   const deleteProduct = async id => {
     console.log(selected)
