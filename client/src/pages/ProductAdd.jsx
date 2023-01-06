@@ -41,7 +41,7 @@ const ProductAdd = () => {
     const changeOnClick = (e) => {
         e.preventDefault()
 
-        axios.post("http://localhost:8080/add", {
+        axios.post("https://test-task-backend.onrender.com/add", {
             Sku: Sku,
             Name: Name,
             Price: Price,

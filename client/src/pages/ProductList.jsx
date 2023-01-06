@@ -13,7 +13,7 @@ const ProductList = () => {
   });
 
   useEffect(function () {
-    fetch("http://localhost:8080/")
+    fetch("https://test-task-backend.onrender.com/")
       .then((response) => response.json())
       .then((data) => setProducts(data));
   }, []);
@@ -34,7 +34,7 @@ const ProductList = () => {
   const [product, setProduct] = useState([])
   const deleteProduct = async id => {
     console.log(selected)
-    await axios.delete(`http://localhost:8080/delete/${selected.product_ids}`)
+    await axios.delete(`https://test-task-backend.onrender.com/delete/${selected.product_ids}`)
     setProduct(product.filter(selected => selected.product_ids !== id))
     window.location.reload();
   }
